@@ -1,0 +1,62 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    background: rgba(11, 13, 22, 0.8); /* Fond légèrement transparent */
+    backdrop-filter: blur(10px);
+}
+  
+  .sticky-nav a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+  .sticky-nav a:hover{
+    color: white;
+}
+
+  section {
+    height: 100vh; /* Chaque section prend toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column; /* Pour empiler les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center;
+    font-size: 2rem;
+    scroll-snap-align: start;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #8e44ad, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1 span {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+#accueil { background-color: #1a1a1a; color: white; }
+#a-propos { background-color: #2c3e50; color: white; }
+#competences { background-color: #34495e; color: white; }
+#projets { background-color: #7f8c8d; color: white; }
+#contact { background-color: #95a5a6; color: black; }
