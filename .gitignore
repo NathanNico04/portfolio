@@ -134,3 +134,27 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Fichiers et dossiers Docker à ignorer
+.dockerignore
+Dockerfile
+docker-compose.yml
+/.docker/
+
+# Fichiers et dossiers générés par Docker
+**/docker-entrypoint.sh
+**/docker-compose.override.yml
+**/docker-compose*.yml~
+/var/lib/docker/
+*.log
+*.pid
+
+# Cache et fichiers temporaires Docker
+**/tmp/
+**/cache/
+**/logs/
+**/backup/
+
+# Fichiers spécifiques aux conteneurs et volumes Docker
+docker-volume/
+docker-data/
